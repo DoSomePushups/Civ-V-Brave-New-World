@@ -366,24 +366,42 @@
 	// Ideologies
     {
         "name": "Autocracy",
-        "era": "Modern era",
+        "era": "Industrial era",
         "priorities": {
             "Neutral": 5,
-            "Cultural": 0,
+            "Cultural": 5,
             "Diplomatic": 5,
             "Domination": 10,
             "Scientific": 5
         },
         "uniques": [
+            "[-33]% maintenance costs <for [All] units>",
+            "Upon capturing a city, receive [10] times its [Culture] production as [Culture] immediately",
             "Only available <before adopting [Order]>",
             "Only available <before adopting [Freedom]>"
         ],
         "policies": [
             {
+                "name": "Populism",
+                "uniques": ["[+25]% Strength <for [Wounded] units>", "[+100]% weight to this choice for AI decisions"],
+                "row": 1,
+                "column": 2
+            },
+            {
                 "name": "Militarism",
                 "uniques": ["[Gold] cost of purchasing [All] units [-33]%"],
                 "row": 1,
                 "column": 4
+            },
+            {
+                "name": "Fascism",
+                "uniques": [
+                    "Quantity of strategic resources produced by the empire +[100]%",
+                    "[+2] Movement <for [Great General] units>"
+                ],
+                "requires": ["Populism", "Militarism"],
+                "row": 2,
+                "column": 2
             },
             {
                 "name": "Police State",
