@@ -244,9 +244,7 @@
             },
             {
                 "name": "Mercenary Army",
-                "uniques": [
-					// Allows the purchasing of Landsknechts.
-				],
+                "uniques": ["[Gold] cost of purchasing [All] units [-10]%"],
                 "row": 1,
                 "column": 4
             },
